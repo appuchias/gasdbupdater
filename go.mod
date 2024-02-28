@@ -1,4 +1,4 @@
-module webdbupdater/main
+module appuchias/webdbupdater
 
 go 1.22.0
 
