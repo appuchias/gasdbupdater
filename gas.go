@@ -8,6 +8,14 @@ import (
 	"time"
 )
 
+// API response
+type Response struct {
+	Fecha             string          `json:"Fecha"`
+	ListaGasolineras  []RawGasStation `json:"ListaEESSPrecio"`
+	Nota              string          `json:"Nota"`
+	ResultadoConsulta string          `json:"ResultadoConsulta"`
+}
+
 // Gas station (only strings)
 type RawGasStation struct {
 	IDEESS    string `json:"IDEESS"`

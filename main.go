@@ -27,13 +27,6 @@ func GetData(url string) (string, error) {
 	return string(body), nil
 }
 
-// API response
-type Response struct {
-	Fecha             string          `json:"Fecha"`
-	ListaGasolineras  []RawGasStation `json:"ListaEESSPrecio"`
-	Nota              string          `json:"Nota"`
-	ResultadoConsulta string          `json:"ResultadoConsulta"`
-}
 
 func main() {
 	// Measure request and parsing time
