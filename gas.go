@@ -89,7 +89,7 @@ type GasPrice struct {
 	PrecioHidrogeno           float64
 }
 
-func getRawGasStations(url string) ([]GasStation, []GasPrice) {
+func GetGasStationsGasPrices(url string) ([]GasStation, []GasPrice) {
 	body, err := GetData(url)
 	if err != nil {
 		log.Fatal(err)

@@ -27,13 +27,13 @@ func GetData(url string) (string, error) {
 	return string(body), nil
 }
 
-
 func main() {
 	// Measure request and parsing time
 	start := time.Now()
-	gasStations, GasPrices := getRawGasStations(url)
+	gasStations, GasPrices := GetGasStationsGasPrices(url)
 	log.Printf("Request and parsing time: %v", time.Since(start))
 
+	// Measure database time
 	beforeDB := time.Now()
 	db, err := sql.Open("sqlite3", dbPath)
 	if err != nil {
@@ -74,7 +74,5 @@ func main() {
 			}
 		}
 	}
-
 	log.Printf("Database time: %v", time.Since(beforeDB))
-
 }
