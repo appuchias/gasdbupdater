@@ -11,6 +11,8 @@ and then saves the current prices to a SQLite database (named `db.sqlite3`)
 
 I made this to learn a bit of Go and try to improve the efficiency of the price updates of [my website](https://appu.ltd).
 
+Current version should work but I'm not currently using it.
+
 ## Setup
 
 1. Navigate to the desired folder to store the code: `cd <path>`
